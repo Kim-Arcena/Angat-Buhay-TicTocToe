@@ -7,6 +7,7 @@
     --background:#EBECF0;
     --lightgray: #cfd4d6;
     --black: #000;
+	--pink: #DB1586;
 }
 
 
@@ -34,6 +35,7 @@ body{
 	text-align: center;
 	height: 2rem;
 	margin: 2rem 0;
+	
 }
 
 h1{
@@ -65,9 +67,9 @@ h1{
     height: 330px;
 	text-align: center;
     justify-content: center;
-	color: var(--black);
+	color: var(--pink);
     border-radius: 2rem;
-    margin: 10rem 2rem;
+    margin: 10rem 2rem 0 4rem;
     display: inline-block;
     line-height: normal;
     padding: 2rem;
@@ -100,6 +102,156 @@ h1{
     border-radius: 1rem;
     box-shadow: -5px -5px 20px var(--white), 3px 3px 10px var(--shadow);
     transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    
+    cursor: pointer;   
 }
+
+button{
+	background-color: var(--gray);
+	border-radius: 1rem;
+	display: inline-block;
+	padding: 0;
+	background: var(--background);
+	color: var(--pink);
+	box-shadow: -4px -4px 7px var(--white), 4px 4px 7px var(--shadow);
+	width: 9rem;
+	height: 3rem;
+}
+
+.menu-container{
+	/* border: 1px solid var(--gray); */
+}
+
+
+
+#messages, #messages2, #messages3, #messages4, #clockmain, #clockinvite, #clocksession, #clockgame, #sessionblock
+{
+	display: none;
+}
+.search_table
+{
+	display: inline;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	box-shadow: 10px 10px 5px #888888;
+	border-radius: 8px;
+}
+.search_table TABLE
+{
+	width: 25rem;
+	margin: 2rem;
+	border-radius: 10px;
+	border: none;
+	padding: 0px;
+}
+.search_table TR:last-child TD:last-child, .search_table TABLE TR:first-child TD:first-child, .search_table TABLE TR:first-child TD:last-child, .search_table TR:last-child TD:first-child
+{
+	border: none;
+}
+.search_table TR:nth-child(odd)
+{
+	background-color: var(--background);
+	border: 1px solid #b24646;
+}
+.search_table TR:nth-child(even)
+{
+	background-color: var(--background);
+	border: none;
+}
+.search_table TD
+{
+	vertical-align: middle;
+	border: none;
+	text-align: center;
+	padding: 10px;
+	font-size: 13px;
+	font-family: "Trebuchet MS";
+	font-weight: normal;
+	color: #000000;
+}
+.search_table TR:last-child TD:last-child
+{
+	border-width: 0px;
+	border: none;
+}
+.search_table TR:first-child TD
+{
+	text-align: center;
+	font-size: 16px;
+	font-family: "Trebuchet MS";
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.search_table TR:first-child:hover TD
+{
+	background: -o-linear-gradient(bottom, #ff7f00 5%, #bf5f00 100%);
+	border: none;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ff7f00), color-stop(1, #bf5f00) );
+	background: -moz-linear-gradient( center top, #ff7f00 5%, #bf5f00 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff7f00", endColorstr="#bf5f00");
+	background: -o-linear-gradient(top,#ff7f00,bf5f00);
+	background-color: #FF7F00;
+}
+/* #home-page, #user-play, #user-avail, #user-history
+{
+	width: 194px;
+	height: 51px;
+	margin-bottom: -6px;
+} */
+#home-page
+{
+	margin-top: 13px;
+	margin-bottom: 12px;
+}
+
+/*#######TICTACTOE RULES#######*/
+#txtHint2
+{
+	background-color: transparent;
+	margin: 20px auto 0;
+	width: 400px;
+	height: 375px;
+	padding: 30px 15px;
+}
+
+#winner
+{
+	padding: 19px 3px 15px !important;
+	height: 28px !important;
+	margin: 50px 0 0  !important;
+	width: 25rem !important;
+	color: var(--pink) !important;
+	font-size: 15.4pt !important;
+}
+
+.tictactoe{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -2rem;
+	/* border: 1px solid var(--gray); */
+}
+
+.tictactoe TABLE
+{
+	width: 100%;
+	display: flex;
+	height: 100% ;
+	margin: 0px ;
+	border-radius: 10px;
+	border: none ;
+	/* border: 1px solid #000; */
+	/* box-shadow: -5px -5px 20px var(--white), 3px 3px 10px var(--shadow); */
+	align-items: center;
+	justify-content: center;
+	border-spacing: 1rem;
+}
+.tictactoe TD{
+	border-radius: 1rem ;
+	background-color: var(--background);
+	width: 7rem;
+	height: 7rem;
+	box-shadow: -4px -4px 7px var(--white), 4px 4px 7px var(--shadow);
+}
+
