@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
+:root{
+    --gray: #787C7F;
+    --white: #FFF;
+    --shadow: #BABECC;
+    --background:#EBECF0;
+    --lightgray: #cfd4d6;
+    --black: #000;
+}
+
+
 *{
     font-family: 'Nunito', sans-serif;
     margin: 0; padding:0;
@@ -9,5 +19,73 @@
     text-transform: capitalize;
     transition: all .2s linear;
     font-size: 15px;
-    color: #000;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--background);
+    letter-spacing: 1px;
+}
+
+
+.header
+{
+	text-align: center;
+	height: 2rem;
+	margin: 2rem 0;
+}
+
+h1{
+	color: #D5D2C9;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: var(--shadow);
+    text-shadow: 1px 1px 1px var(--white);
+    display: block;
+    size: 10rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 2% 20%;
+    box-shadow: -4px -4px 7px var(--white), 4px 4px 7px var(--shadow);
+    border-radius: 2.5rem;
+}
+.menu{   
+	vertical-align: middle;
+    display: inline-block;
+	width: 200px;
+    height: 330px;
+	text-align: center;
+    justify-content: center;
+	color: var(--black);
+    border-radius: 2rem;
+    margin: 10rem 2rem;
+    display: inline-block;
+    line-height: normal;
+    padding: 2rem;
+    letter-spacing: 0.5px;
+    box-shadow: inset 2px 2px 5px var(--shadow), inset -5px -5px 10px var(--white);
+    transition: all 0.2s ease-in-out;
+}
+.content
+{   
+    border-radius: 2rem;
+    padding: 2rem;
+	display: inline-block;
+	width: 50rem;
+	margin: 3rem;
+	height: 40rem;
+	text-align: center;
+    box-shadow: inset 2px 2px 5px var(--shadow), inset -5px -5px 10px var(--white);
+    transition: all 0.2s ease-in-out;
 }
